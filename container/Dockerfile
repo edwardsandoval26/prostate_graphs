@@ -1,4 +1,4 @@
-# Use pytorch
-FROM pytorch/pytorch:2.2.1-cuda12.1-cudnn8-devel
+# Use pytorch geometric custom image
+FROM nvcr.io/nvidia/pyg:24.05-py3
 COPY requirements.txt .
 RUN pip install -r requirements.txt
